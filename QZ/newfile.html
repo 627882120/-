@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> 
+	<title>中岚签证</title>
+	<meta name="keywords" content="美国签证 加急 预约 面谈 代办">
+	<meta name="description" content="一家专门从事美国签证咨询的网站">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/><!-- bootstrap.css -->
+	<link rel="stylesheet" type="text/css" href="css/index.css"><!-- 我的css标准 -->
+	<link rel="stylesheet" type="text/css" href="css/index-big.css"><!-- 我的css大 -->
+	<link rel="stylesheet" type="text/css" href="css/index-min.css"><!-- 我的css小 -->
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script><!-- JQ的js -->
+	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script><!-- bootstrap.js -->
+	<script src="js/countUp.js" type="text/javascript" charset="utf-8"></script><!-- bootstrap字体库 -->
+	<link rel="shortcut icon" href="img/b.ico"><!-- 左上角小图标 -->
+	<script src="js/js.js" type="text/javascript" charset="utf-8"></script><!-- 底部动态线条 -->
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div id="header">
+		<nav class="navbar navbar-default navbar-fixed-top nofixed">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#xl">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">
+						<img src="img/logo.png">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="xl">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="" style="color: #0BA1E4" >首页</a></li>
+						<li><a href="">签证指南</a></li>
+						<li><a href="">签证加急</a></li>
+						<li><a href="">签证服务</a></li>
+						<li><a href="">签证咨询</a></li>
+						<li><a href="">资料下载</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- 轮播图 -->
+	<div class="carousel slide" id="lbt">
+		<ul class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#lbt"></li>
+			<li data-slide-to="1" data-target="#lbt"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/D1.jpg" class="img-responsive">
+			</div>
+			<div class="item">
+				<img src="img/D2.jpg" class="img-responsive">
+			</div>
+		</div>	
+	</div>
+	<!-- 轮播图js -->
+	<script type="text/javascript">
+			$("lbt").carousel({
+				interval:2000
+			})
+	</script>
+	<!-- 轮播图结束 -->
+	<!-- 动态数字开始 -->
+	<div class="D1">
+		<div class="D1X container">
+			<div class="row">
+				<div class="col-sm-12 main-title">
+					<h2 class="h1">我们的成绩</h2>
+					<p class="line line-big"></p>
+					<h2><small>2018年1月1日至2018年12月30日，我们的接待数据。</small></h2>
+				</div>
+				<div class="col-sm-3 our-data-item sum-apply">
+					<div class="number-wrapper">
+						<span id="sum-apply" class="run-number" data-to="240"></span>
+					</div>
+					<h4 class="title">累计受理申请</h4>
+				</div>
+				<div class="col-sm-3 our-data-item sum-rate">
+					<div class="number-wrapper">
+						<span id="sum-rate" class="run-number" data-to="240"></span><span class="bfh">%</span>
+					</div>
+					<h4 class="title">综合通过率</h4>
+				</div>
+				<div class="col-sm-3 our-data-item sum-urgent">
+					<div class="number-wrapper">
+						<span id="sum-urgent" class="run-number" data-to="240"></span>
+					</div>
+					<h4 class="title">加急申请人数</h4>
+				</div>
+				<div class="col-sm-3 our-data-item urgent-rate">
+					<div class="number-wrapper">
+						<span id="urgent-rate" class="run-number" data-to="240"></span><span class="bfh">%</span>
+					</div>
+					<h4 class="title">加急成功率</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 动态数字js开始 -->
+	<script type="text/javascript">
+			var options = {
+		        useEasing: true, //开启一个过渡动画
+		        useGrouping: true, //开启千位分割
+		        separator: ',',  //定义千位分隔符
+		        decimal: '.',    //小数点分割
+		   }; 
+		    var arr=new Array(
+		    	// CountUp(参数一, 参数二, 参数三, 参数四, 参数五, 参数六)
+				  // 参数一: 数字所在容器
+				  // 参数二: 数字开始增长前的默认值(起始值),一般从 0 开始增长
+				  // 参数三: 数字增长后的最终值,该值一般通过异步请求获取
+				  // 参数四: 数字小数点后保留的位数
+				  // 参数五: 数字增长特效的时间,此处为3秒
+				  // 参数六: 其他配置项
+				  // 注: 参数六也可不加,其配置项则为默认值
+		    	new CountUp('sum-apply', 0, 18397, 0, 2, options),
+		    	new CountUp('sum-rate', 0, 98.8, 1, 2, options),
+		    	new CountUp('sum-urgent', 0, 3273, 0, 2, options),
+		    	new CountUp('urgent-rate', 0, 100, 0, 2, options),
+		    )
+		    
+		    var fn=function(){
+		    	$(".run-number").each(function(){
+		    		//console.log($(this).index('.item')) //0 1 2
+		    		var index=$(this).index('.run-number')
+		    		arr[index].start()
+		    		//console.log($(this).parent().index()) //0 1 2
+		    	})
+		    }
+		    fn()
+	</script>
+	<!-- 第二部分结束 -->
+	<!-- 第三部分我们的优势开始 -->
+	<div class="D2">
+		<div class="D2X container">
+			<div class="row">
+				<div class="col-sm-12 main-title">
+					<h2 class="h1">我们的优势</h2>
+					<p class="line line-big"></p>
+					<h2><small>每一份签证申请都是独立个案，每一位申请人都应该被认真对待。</small></h2>
+				</div>
+				<div class="col-sm-3">
+					<div class="our-whyus-item">
+	                    <span class="glyphicon glyphicon-time"></span>
+	                    <h3 class="title">十一年美签经验</h3>
+	                    <p>2006年开始办理美国签证至今，积累了丰富的首签和拒签再签实用经验。</p>
+	                </div>
+				</div>
+				<div class="col-sm-3">
+					<div class="our-whyus-item">
+	                    <span class="glyphicon glyphicon-screenshot"></span>
+	                    <h3 class="title">一对一精准定制</h3>
+	                    <p>每一位申请人都是独立的签证个案，我们从签证原理开始，为您定制最优方案。</p>
+	                </div>
+				</div>
+				<div class="col-sm-3">
+					<div class="our-whyus-item">
+	                    <span class="glyphicon glyphicon-refresh"></span>
+	                    <h3 class="title">高效率即时响应</h3>
+	                    <p>遇到任何疑问，您都会在第一时间得到我们的正面回应，并进行相关处理。</p>
+	                </div>
+				</div>
+				<div class="col-sm-3">
+					<div class="our-whyus-item">
+	                    <span class="glyphicon glyphicon-thumbs-up"></span>
+	                    <h3 class="title">精益求精的态度</h3>
+	                    <p>死磕完美材料，对签证申请流程中的细节一丝不苟，力争最高通过率。</p>
+	                </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第四部分开始我们的服务 -->
+	<div class="D3">
+		<div class="D3X container">
+			<div class="row">
+				<div class="col-sm-12 main-title" style="text-align: center;">
+					<h2 class="h1">我们的服务</h2>
+					<p class="line line-big"></p>
+					<h2><small>与美国非移民签证申请相关的所有服务，我们都提供支持。</small></h2>
+				</div>
+				<div class="col-sm-12 text-center card-box">
+					<ul class="card-area">
+						<li class="card-item">
+							<div class="card-title">
+								<h4>美国加急预约</h4>
+								<p>全程加急办理</p>
+							</div>
+							<div class="card-buttom">
+								<p>3个工作日内进馆</p>
+								<p>先加急 后付费</p>
+								<p>100%加急成功</p>
+								<p>支持全国五大领区</p>
+								<p>支持所有签证类型</p>
+								<a href="#" class="btn btn-outline-blue ck">查看详情</a>
+							</div>
+						</li>
+						<li class="card-item">
+							<div class="card-title">
+								<h4>美国商务签证</h4>
+								<p>B1/B2商务</p>
+							</div>
+							<div class="card-buttom">
+								<p>10年多次往返</p>
+								<p>一对一方案定制</p>
+								<p>申请材料指导</p>
+								<p>面签培训</p>
+								<p>全程解答所有疑问</p>
+								<a href="#" class="btn btn-outline-blue ck">查看详情</a>
+							</div>
+						</li>
+						<li class="card-item">
+							<div class="card-title">
+								<h4>美国免面签</h4>
+								<p>免面试中信代传递</p>
+							</div>
+							<div class="card-buttom">
+								<p>简单申请材料</p>
+								<p>无须进馆面试</p>
+								<p>B1/B2十年有效</p>
+								<p>可加急申请</p>
+								<p>全流程服务</p>
+								<a href="#" class="btn btn-outline-blue ck">查看详情</a>
+							</div>
+						</li>
+						<li class="card-item">
+							<div class="card-title">
+								<h4>美国留学签证</h4>
+								<p>F1/F2留学陪读</p>
+							</div>
+							<div class="card-buttom">
+								<p>签证方案咨询</p>
+								<p>申请材料指导</p>
+								<p>代缴SEVIS费</p>
+								<p>面签培训</p>
+								<p>可加急办理</p>
+								<a href="#" class="btn btn-outline-blue ck">查看详情</a>
+							</div>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-sm-12 text-center">
+                <a href="#" class="btn btn-outline-blue btn-lg ckk">查看更多服务</a>
+            </div>
+			</div>
+		</div>
+	</div>
+	<!-- 第五部分开始客户鼓励 -->
+	<div class="D4">
+		<div class="D4X container">
+			<div class="row">
+				<div class="col-sm-12 main-title" style="text-align: center;">
+					<h2 class="h1">客户的鼓励</h2>
+					<p class="line line-big"></p>
+					<h2><small>帮助您解决实际问题，顺利、及时地获得签证，是我们存在的根本价值。</small></h2>
+				</div>
+				<div class="col-sm-4 our-example-box">
+					<div class="our-example-popover">
+						<div class="popover D4-1">
+							<div class="arrow" id="arrow-1"></div>
+							<div class="arrow" id="arrow-2"></div>
+							<div class="tx"><img src="img/D3.jpg"></div>
+							<div class="D4-1wbk">
+								<p class="D4-1wz">护照丢了，定了春节行程。11号补好护照约了13号面签，这速度简直惊人，所有的旅行社都说弄不了，来不及了，肯定没戏。多亏了你们，非常感谢！</p>
+								<div class="D4-1wz-1">
+									<span class="D4-1wz-1-1">B1商务签证</span>
+									<div class="D4-1wz-2">
+										<span><img src="img/D15.png"></span>
+										<span class="D4-1wz-2-1">北京领事馆</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="D4-img"><img src="img/D14.png"></div>
+				</div>
+				<div class="col-sm-4 our-example-box">
+					<div class="our-example-popover">
+						<div class="popover D4-1">
+							<div class="arrow" id="arrow-1"></div>
+							<div class="arrow" id="arrow-2"></div>
+							<div class="tx"><img src="img/D4.jpg"></div>
+							<div class="D4-1wbk">
+								<p class="D4-1wz">因为我情况很特殊也很难办，白本加多次拒签。感谢你们为我做详细的分析与方案，这次签证终于过了！本来都做好心理准备再拒我就彻底放弃的。谢谢你们！</p>
+								<div class="D4-1wz-1">
+									<span class="D4-1wz-1-1">B2旅游签证</span>
+									<div class="D4-1wz-2">
+										<span><img src="img/D15.png"></span>
+										<span class="D4-1wz-2-1">广州领事馆</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="D4-img"><img src="img/D14.png"></div>
+				</div>
+				<div class="col-sm-4 our-example-box">
+					<div class="our-example-popover">
+						<div class="popover D4-1">
+							<div class="arrow" id="arrow-1"></div>
+							<div class="arrow" id="arrow-2"></div>
+							<div class="tx"><img src="img/D5.jpg"></div>
+							<div class="D4-1wbk">
+								<p class="D4-1wz">同学推荐过来的，马上就要开学了，加上去年成绩不并理想。多亏你们帮我插队面签，分析面签问题，非常专业。现在签证已经拿到了，我会再介绍同学来。</p>
+								<div class="D4-1wz-1">
+									<span class="D4-1wz-1-1">F1留学签证</span>
+									<div class="D4-1wz-2">
+										<span><img src="img/D15.png"></span>
+										<span class="D4-1wz-2-1">上海领事馆</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="D4-img"><img src="img/D14.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第六部分最新资讯开始 -->
+	<div class="D6">
+		<div class="D6X container">
+			<div class="row">
+				<div class="col-sm-12 main-title" style="text-align: center;">
+					<h2 class="h1">美国签证最新资讯</h2>
+					<p class="line line-big"></p>
+					<h2><small>中岚签证帮您关注最新美国签证相关政策与新闻。</small></h2>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="D6-1">
+						<div class="D6-1-1">
+							<img src="img/D6.jpg">
+						</div>
+						<div class="D6-1-2">
+							<h4><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=49">92名中国民工被欠薪受困塞班岛 华裔中介扣钱逃匿</a></h4>
+							<div class="D6-1-2-sj">时间：2017-05-09 </div>
+							<p class="D6-1-2-P">他们大部分来自东北，在去年10月份时，其所在城市的劳务中介公司找到他们，介绍了塞班岛的工作，中介给他们开出每天工作8小时日薪300元、如果加班每小时50元的待遇。民工称他们当时也没</p>
+							<div class="D6-1-2-3">
+								<span>作者：中岚签证 clantrip.com</span>
+								<span class="D6-1-2-3-1"><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=49">[详细]</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="D6-1">
+						<div class="D6-1-1">
+							<img src="img/D16.png">
+						</div>
+						<div class="D6-1-2">
+							<h4><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=48">2017年赴美签证新规定</a></h4>
+							<div class="D6-1-2-sj">时间：2017-05-09 </div>
+							<p class="D6-1-2-P">美国国务院领事事务局2016年10月6日公告，自2016年11月1日开始，申请美国护照或签证，要使用没有戴眼镜的照片。</p>
+							<div class="D6-1-2-3">
+								<span>作者：中岚签证 clantrip.com</span>
+								<span class="D6-1-2-3-1"><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=48">[详细]</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="D6-1">
+						<div class="D6-1-1">
+							<img src="img/D7.jpg">
+						</div>
+						<div class="D6-1-2">
+							<h4><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=47">美国有多少人缴纳个人所得税及其它</a></h4>
+							<div class="D6-1-2-sj">时间：2017-05-09 </div>
+							<p class="D6-1-2-P">前几天我们有一篇博文介绍了美国个人所得税税率，不少网友提出许多有关美国个税税收的问题，这里就集中回答。由于个税牵涉到联邦所得税以及</p>
+							<div class="D6-1-2-3">
+								<span>作者：中岚签证 clantrip.com</span>
+								<span class="D6-1-2-3-1"><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=47">[详细]</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="D6-1">
+						<div class="D6-1-1">
+							<img src="img/D8.jpg">
+						</div>
+						<div class="D6-1-2">
+							<h4><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=46">多国签证利好频出，带火春节出境游</a></h4>
+							<div class="D6-1-2-sj">时间：2017-05-09 </div>
+							<p class="D6-1-2-P">近一两个月来，澳大利亚、马来西亚、以色列、阿联酋、塞尔维亚、泰国等国纷纷对中国公民捧出签证利好，加上春节临近，大为提振了南京市民的旅游热情。记者从旅游市场上获悉，春节期间</p>
+							<div class="D6-1-2-3">
+								<span>作者：中岚签证 clantrip.com</span>
+								<span class="D6-1-2-3-1"><a href="http://www.clantrip.com/index.php?m=content&c=index&a=show&catid=10&id=46">[详细]</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 our-news-more">
+					<h4>
+						<a href="">更多资讯>>></a>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第七部分我们的客户 -->
+	<div class="D7">
+		<div class="D7X container">
+			<div class="row">
+				<div class="col-sm-12 main-title" style="text-align: center;">
+				<h2 class="h1">我们的客户</h2>
+				<p class="line line-big"></p>
+				<h2><small>他们与中岚建立了合作关系</small></h2>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D31.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D32.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D33.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D34.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D35.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D36.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D37.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D38.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D39.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D40.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D41.png"></div>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+					<div class="D7log"><img src="img/D42.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第八部分更多疑问 -->
+	<div class="D8">
+		<canvas  id="waves" class="waves" style="position: absolute;max-width: 100%;"></canvas>
+		<div class="D8X container">
+			<div class="row">
+				<div class="col-sm-12 main-title" style="text-align: center; margin-top:30px; ">
+					<h2 class="h1">更多疑问 全面解答</h2>
+					<h2><small style="color:white;">资深美签专家在线为您解答所有疑惑</small></h2>
+					<a href="http://p.qiao.baidu.com/cps/chat?siteId=10659290&userId=20073939">免费咨询</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第九部分底部二维码区域 -->
+	<div class="D9">
+		<div class="D9X container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-2 footer-item">
+					<div class="D9-1">常用工具</div>
+					<div class="D9-2"><a href="">电话查询</a></div>
+					<div class="D9-2"><a href="">护照追踪</a></div>
+					<div class="D9-2"><a href="">资料下载</a></div>
+				</div>
+				<div class="col-xs-6 col-sm-2 footer-item">
+					<div class="D9-1">快捷裢接</div>
+					<div class="D9-2"><a href="">签证资讯</a></div>
+					<div class="D9-2"><a href="">签证指南</a></div>
+					<div class="D9-2"><a href="">常见问题</a></div>
+				</div>
+				<div class="col-xs-6 col-sm-2 footer-item">
+					<div class="D9-1">关于我们</div>
+					<div class="D9-2"><a href="">关于中岚</a></div>
+					<div class="D9-2"><a href="">服务协议</a></div>
+					<div class="D9-2"><a href="">收藏本站</a></div>
+				</div>
+				<div class="col-xs-6 col-sm-2 footer-item">
+					<div class="D9-img"><img src="img/wechat.png"></div>
+					<div class="D9-wx">微信号:clanus</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 footer-item footer-item-last">
+					<h2 class="D9-3"><img src="img/iphone.png">010-64648731</h2>
+					<h2 class="D9-3"><img src="img/qq.png">54350970</h2>
+					<h2 class="D9-3"><img src="img/D17.png">18810888729</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第十部分底部 -->
+	<div class="D10">
+		<div class="D10X container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="D10-P">Copyright © 2006-2019 clantrip.com All Rights Reversed. 中岚签证  <a href="#">京ICP备16015317</a></p>
+					<p class="D10-P2"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102002687"><img src="img/D99.png">  京公安网备案  11010102002687</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 电脑侧边导航栏 -->
+	<ul class="cbdh">
+		<li class="cbdh-1">
+			<a href="http://p.qiao.baidu.com/cps/chat?siteId=10659290&userId=20073939">
+				<div class="cbdh-1-1">在线咨询</div>
+			</a>
+		</li>
+		<li class="cbdh-2">
+			<a href="#">
+				<div class="cbdh-1-1 a2">QQ咨询</div>
+			</a>
+		</li>
+		<li class="cbdh-3">
+			<a href="#">
+				<div class="cbdh-1-1 a3">010-64648731</div>
+			</a>
+		</li>
+		<li class="cbdh-4">
+			<a href="#">
+				<div class="a4"><img src="img/wechat.png"></div>
+			</a>
+		</li>
+		<li class="cbdh-5" id="goTop" style="display: none;">
+			<a>
+				<div class="cbdh-1-1 a5"></div>
+			</a>
+		</li>
+	</ul>
+	<!-- 手机底部导航栏 -->
+	<ul class="navbar-fixed-bottom" id="sjdb">
+		<li><a href=""><img src="img/D80.png"><span>电话咨询</span></a></li>
+		<li><a href=""><img src="img/D81.png"><span>电话咨询</span></a></li>
+		<li><a href=""><img src="img/D82.png"><span>电话咨询</span></a></li>
+		<li><a href=""><img src="img/D83.png"><span>电话咨询</span></a></li>
+	</ul>
+	<div class="mintop" id="mintop"></div>
+	<!-- 侧边导航栏向上按钮js -->
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			var oScrollTop = $(window).scrollTop()
+			// PC端和移动端显示返回顶部 
+			if (oScrollTop > $(".cbdh").height()) {
+				$("#mintop").fadeIn(300)
+				$("#mintop").css({display:"block"})
+				$("#goTop").fadeIn(300)
+				$("#goTop").css({display:"block"})
+			}else if (oScrollTop < $(".cbdh").height()) {
+				$("#mintop").fadeOut(300)
+				$("#mintop").css({display:"none"})
+				$("#goTop").fadeOut(300)
+				$("#goTop").css({display:"none"})
+			}
+		})
+		// PC端返回顶部
+			$("#goTop").click(function() {
+				$("body,html").animate({
+					"scrollTop": 0
+				}, 500)
+			})
+			// 移动端返回顶部
+			$("#mintop").click(function() {
+				$("body,html").animate({
+					"scrollTop": 0
+				}, 500)
+			})
+
+	</script>
+</body>
+</html>
